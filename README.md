@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Currículo - Seu Nome</title>
+  <title>Currículo - Mateus Cardoso</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     * {
@@ -69,9 +69,9 @@
 <body>
   <div class="container">
     <h1>Seu Nome</h1>
-    <p><strong>Email:</strong> seu.email@exemplo.com<br>
-       <strong>LinkedIn:</strong> <a href="#">linkedin.com/in/seuusuario</a><br>
-       <strong>GitHub:</strong> <a href="#">github.com/seuusuario</a></p>
+    <p><strong>Email:</strong> cardoso.olim@gmail.com<br>
+       <strong>LinkedIn:</strong> <a href="#">https://www.linkedin.com/in/mateus-cardoso-55330b279//a><br>
+       <strong>GitHub:</strong> <a href="#">https://github.com/mateus250402?tab=repositories</a></p>
 
     <div class="section">
       <h2>Resumo Profissional</h2>
@@ -81,7 +81,7 @@
     <div class="section">
       <h2>Experiência</h2>
       <h3>Sistema de Inscrição JuvEnart</h3>
-      <p><em>Desenvolvedor Full Stack</em> — 2023 - Presente</p>
+      <p><em>Desenvolvedor Full Stack</em> — 2024 - Presente</p>
       <ul>
         <li>Desenvolvimento do sistema em PHP e migração posterior para Python.</li>
         <li>Integração com banco de dados MySQL e APIs externas (ex: IBGE).</li>
@@ -91,7 +91,7 @@
 
     <div class="section">
       <h2>Formação Acadêmica</h2>
-      <p><strong>Curso de Exemplo</strong> — Universidade X (Ano de início - Ano de término)</p>
+      <p><strong>Sistemas de Informação</strong> — Universidade Federal de Santa Maria (2024 - Atualmente)</p>
     </div>
 
     <div class="section">
@@ -99,7 +99,6 @@
       <ul>
         <li>Python, PHP, MySQL</li>
         <li>HTML5, CSS, JavaScript</li>
-        <li>APIs REST, Integrações externas</li>
         <li>Git, Linux</li>
       </ul>
     </div>
