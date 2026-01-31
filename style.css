@@ -371,3 +371,34 @@ footer {
   content: '→';
   font-size: 1.1em;
 }
+
+/* ================= MOBILE ADAPTATION ================= */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 5%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .hero-photo {
+    justify-content: center;
+    /* Image above */
+    order: -1;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 20px 5%;
+  }
+}
