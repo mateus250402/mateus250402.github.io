@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mateus Cardoso | Desenvolvedor Freelancer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Mateus Cardoso</h1>
+        <nav style="display:flex; gap:16px; align-items:center;">
+            <button class="lang-btn" onclick="toggleLanguage()" id="langBtn">EN</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-photo">
+            <img src="img/hero_photo.jpeg" alt="Foto de Mateus Cardoso" class="profile-img" />
+        </div>
+        <div>
+            <h2 id="heroTitle"></h2>
+            <p id="heroText"></p>
+        </div>
+    </section>
+
+    <section id="contato">
+        
+        <div class="contact-container">
+            <a href="mailto:cardoso.olim@gmail.com" class="contact-card">
+                <div class="icon">📧</div>
+                <div class="content">
+                    <h3>Email</h3>
+                    <p>cardoso.olim@gmail.com</p>
+                </div>
+            </a>
+            
+            <a href="https://wa.me/55996352626" target="_blank" class="contact-card">
+                <div class="icon">💬</div>
+                <div class="content">
+                    <h3>WhatsApp</h3>
+                    <p>(55) 99635-2626</p>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/mateus-cardoso-55330b279/" target="_blank" class="contact-card">
+                <div class="icon">💼</div>
+                <div class="content">
+                    <h3>LinkedIn</h3>
+                    <p>Mateus Cardoso</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/mateus250402" target="_blank" class="contact-card">
+                <div class="icon">🐙</div>
+                <div class="content">
+                    <h3>GitHub</h3>
+                    <p>@mateus250402</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2 id="aboutTitle"></h2>
+        <p id="aboutText" class="aboutText"></p>
+    </section>
+
+    <section>
+        <h2 id="servicesTitle"></h2>
+        <div class="grid">
+            <div class="card">
+                <h3 id="service1Title"></h3>
+                <p id="service1Text"></p>
+            </div>
+            <div class="card">
+                <h3 id="service2Title"></h3>
+                <p id="service2Text"></p>
+            </div>
+            <div class="card">
+                <h3 id="service3Title"></h3>
+                <p id="service3Text"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 id="projectProSectionTitle"></h2>
+        <p id="projectProSectionText"></p>
+
+        <div class="projects-grid">
+            <!-- CARD DE PROJETO  -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 id="projectProTitle1"></h3>
+                    <p id="projectProText1"></p>
+                </div>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="prevSlide(this)">‹</button>
+
+                    <div class="carousel-track">
+                        <img src="img/juv/home-screen.png" class="carousel-item active" />
+                        <img src="img/juv/chatbot.png" class="carousel-item" />
+                        <img src="img/juv/panel.png" class="carousel-item" />
+                        <img src="img/juv/panel2.png" class="carousel-item" />
+                        <img src="img/juv/payment.png" class="carousel-item" />
+                        <img src="img/juv/register.png" class="carousel-item" />
+                        <img src="img/juv/password-recover.png" class="carousel-item" />
+                        <img src="img/juv/email.png" class="carousel-item" />
+                    </div>
+
+                    <button class="carousel-btn next" onclick="nextSlide(this)">›</button>
+                </div>
+            </div>
+            <!-- FIM CARD DE PROJETO -->
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2 id="projectAcadSectionTitle"></h2>
+        <p id="projectAcadSectionText"></p>
+        <div class="projects-grid">
+
+            <!-- CARD DE PROJETO  -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 id="projectAcadTitle3"></h3>
+                    <p id="projectAcadText3"></p>
+                </div>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="prevSlide(this)">‹</button>
+                    <div class="carousel-track">
+                        <img src="img/dashboard/insert.png" class="carousel-item active" />
+                        <img src="img/dashboard/view.png" class="carousel-item" />
+                    </div>
+                    <button class="carousel-btn next" onclick="nextSlide(this)">›</button>
+                </div>
+            </div>
+            <!-- FIM CARD DE PROJETO -->
+
+            <!-- CARD DE PROJETO  -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 id="projectAcadTitle4"></h3>
+                    <p id="projectAcadText4"></p>
+                </div>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="prevSlide(this)">‹</button>
+                    <div class="carousel-track">
+                        <img src="img/llm-saude/chat.png" class="carousel-item active" />
+                        <img src="img/llm-saude/history.png" class="carousel-item" />
+                        <img src="img/llm-saude/select.png" class="carousel-item" />
+                    </div>
+                    <button class="carousel-btn next" onclick="nextSlide(this)">›</button>
+                </div>
+            </div>
+            <!-- FIM CARD DE PROJETO -->
+
+            <!-- CARD DE PROJETO  -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 id="projectAcadTitle1"></h3>
+                    <p id="projectAcadText1"></p>
+                </div>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="prevSlide(this)">‹</button>
+                    <div class="carousel-track">
+                        <img src="img/backlog/home.png" class="carousel-item active" />
+                        <img src="img/backlog/login.png" class="carousel-item" />
+                        <img src="img/backlog/backlog.png" class="carousel-item" />
+                        <img src="img/backlog/search.png" class="carousel-item" />
+                        <img src="img/backlog/addgame.png" class="carousel-item" />
+                        <img src="img/backlog/selected.png" class="carousel-item" />
+                        <img src="img/backlog/api.png" class="carousel-item" />
+                    </div>
+                    <button class="carousel-btn next" onclick="nextSlide(this)">›</button>
+                </div>
+            </div>
+            <!-- FIM CARD DE PROJETO -->
+
+            <!-- CARD DE PROJETO  -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 id="projectAcadTitle2"></h3>
+                    <p id="projectAcadText2"></p>
+                </div>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="prevSlide(this)">‹</button>
+                    <div class="carousel-track">
+                        <img src="img/tcg/home.png" class="carousel-item active" />
+                        <img src="img/tcg/menu.png" class="carousel-item" />
+                        <img src="img/tcg/select-theme.png" class="carousel-item" />
+                        <img src="img/tcg/quiz.png" class="carousel-item" />
+                        <img src="img/tcg/booster.png" class="carousel-item" />
+                        <img src="img/tcg/opened-booster.png" class="carousel-item" />
+                        <img src="img/tcg/album.png" class="carousel-item" />
+                        <img src="img/tcg/card-details.png" class="carousel-item" />
+                    </div>
+                    <button class="carousel-btn next" onclick="nextSlide(this)">›</button>
+                </div>
+            </div>
+            <!-- FIM CARD DE PROJETO -->
+
+        </div>
+    </section>
+
+    <section id="artigos">
+        <h2 id="articlesTitle"></h2>
+        <p id="articlesText"></p>
+
+        <div class="articles-grid">
+            <!-- CARD DE ARTIGO -->
+            <div class="article-card">
+                <div class="article-content">
+                    <h3 id="articleTitle1"></h3>
+                    <div class="article-actions">
+                        <a href="pdf/article1.pdf" class="btn-link" target="_blank">Ler Artigo</a>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM CARD DE ARTIGO -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Mateus Cardoso - Desenvolvedor Freelancer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
