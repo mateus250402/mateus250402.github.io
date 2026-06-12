@@ -24,6 +24,7 @@
         <div>
             <h2 id="heroTitle"></h2>
             <p id="heroText"></p>
+            <a href="#contato" id="heroBtn" class="btn"></a>
         </div>
     </section>
 
@@ -92,7 +93,7 @@
         <p id="projectProSectionText"></p>
 
         <div class="projects-grid">
-            <!-- CARD DE PROJETO  -->
+            <!-- CARD DE PROJETO 1 -->
             <div class="project-card">
                 <div class="project-info">
                     <h3 id="projectProTitle1"></h3>
@@ -102,25 +103,58 @@
                     <button class="carousel-btn prev" onclick="prevSlide(this)">‹</button>
 
                     <div class="carousel-track">
-                        <img src="img/juv/home-screen.png" class="carousel-item active" />
-                        <img src="img/juv/chatbot.png" class="carousel-item" />
-                        <img src="img/juv/panel.png" class="carousel-item" />
-                        <img src="img/juv/panel2.png" class="carousel-item" />
-                        <img src="img/juv/payment.png" class="carousel-item" />
-                        <img src="img/juv/register.png" class="carousel-item" />
-                        <img src="img/juv/password-recover.png" class="carousel-item" />
-                        <img src="img/juv/email.png" class="carousel-item" />
+                        <img src="img/juv/home-screen.png" class="carousel-item active" alt="JuvEnart Home" />
+                        <img src="img/juv/chatbot.png" class="carousel-item" alt="JuvEnart Chatbot" />
+                        <img src="img/juv/panel.png" class="carousel-item" alt="JuvEnart Panel" />
+                        <img src="img/juv/panel2.png" class="carousel-item" alt="JuvEnart Admin Panel" />
+                        <img src="img/juv/payment.png" class="carousel-item" alt="JuvEnart Payment" />
+                        <img src="img/juv/register.png" class="carousel-item" alt="JuvEnart Register" />
+                        <img src="img/juv/password-recover.png" class="carousel-item" alt="JuvEnart Recovery" />
+                        <img src="img/juv/email.png" class="carousel-item" alt="JuvEnart Email" />
                     </div>
 
                     <button class="carousel-btn next" onclick="nextSlide(this)">›</button>
                 </div>
             </div>
-            <!-- FIM CARD DE PROJETO -->
+            <!-- FIM CARD DE PROJETO 1 -->
+
+            <!-- CARD DE PROJETO 2 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 id="projectProTitle2"></h3>
+                    <p id="projectProText2"></p>
+                </div>
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="prevSlide(this)">‹</button>
+
+                    <div class="carousel-track">
+                        <img src="img/ger-ctt/home.png" class="carousel-item active" alt="GerCtt Home" />
+                        <img src="img/ger-ctt/add.png" class="carousel-item" alt="GerCtt Add" />
+                        <img src="img/ger-ctt/export.png" class="carousel-item" alt="GerCtt Export" />
+                    </div>
+                    
+                    <button class="carousel-btn next" onclick="nextSlide(this)">›</button>
+                </div>
+            </div>
+            <!-- FIM CARD DE PROJETO 2 -->
+
+            <!-- CARD DE PROJETO 3 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 id="projectProTitle3"></h3>
+                    <p id="projectProText3"></p>
+                </div>
+                <!-- Sem carrossel por enquanto (aguardando imagens) -->
+                <div style="height: 180px; display: flex; align-items: center; justify-content: center; background: rgba(56, 189, 248, 0.05); color: var(--primary); font-size: 3rem;">
+                    💃
+                </div>
+            </div>
+            <!-- FIM CARD DE PROJETO 3 -->
         </div>
 
     </section>
 
-    <section id="projects">
+    <section id="academic-projects">
         <h2 id="projectAcadSectionTitle"></h2>
         <p id="projectAcadSectionText"></p>
         <div class="projects-grid">
@@ -134,8 +168,8 @@
                 <div class="carousel">
                     <button class="carousel-btn prev" onclick="prevSlide(this)">‹</button>
                     <div class="carousel-track">
-                        <img src="img/dashboard/insert.png" class="carousel-item active" />
-                        <img src="img/dashboard/view.png" class="carousel-item" />
+                        <img src="img/dashboard/insert.png" class="carousel-item active" alt="Health Dashboard Input" />
+                        <img src="img/dashboard/view.png" class="carousel-item" alt="Health Dashboard Results" />
                     </div>
                     <button class="carousel-btn next" onclick="nextSlide(this)">›</button>
                 </div>
@@ -151,9 +185,9 @@
                 <div class="carousel">
                     <button class="carousel-btn prev" onclick="prevSlide(this)">‹</button>
                     <div class="carousel-track">
-                        <img src="img/llm-saude/chat.png" class="carousel-item active" />
-                        <img src="img/llm-saude/history.png" class="carousel-item" />
-                        <img src="img/llm-saude/select.png" class="carousel-item" />
+                        <img src="img/llm-saude/chat.png" class="carousel-item active" alt="Clinical Chat" />
+                        <img src="img/llm-saude/history.png" class="carousel-item" alt="Clinical History" />
+                        <img src="img/llm-saude/select.png" class="carousel-item" alt="Patient Selection" />
                     </div>
                     <button class="carousel-btn next" onclick="nextSlide(this)">›</button>
                 </div>
@@ -169,13 +203,13 @@
                 <div class="carousel">
                     <button class="carousel-btn prev" onclick="prevSlide(this)">‹</button>
                     <div class="carousel-track">
-                        <img src="img/backlog/home.png" class="carousel-item active" />
-                        <img src="img/backlog/login.png" class="carousel-item" />
-                        <img src="img/backlog/backlog.png" class="carousel-item" />
-                        <img src="img/backlog/search.png" class="carousel-item" />
-                        <img src="img/backlog/addgame.png" class="carousel-item" />
-                        <img src="img/backlog/selected.png" class="carousel-item" />
-                        <img src="img/backlog/api.png" class="carousel-item" />
+                        <img src="img/backlog/home.png" class="carousel-item active" alt="Game Backlog Home" />
+                        <img src="img/backlog/login.png" class="carousel-item" alt="Game Backlog Login" />
+                        <img src="img/backlog/backlog.png" class="carousel-item" alt="Game Backlog List" />
+                        <img src="img/backlog/search.png" class="carousel-item" alt="Game Backlog Search" />
+                        <img src="img/backlog/addgame.png" class="carousel-item" alt="Game Backlog Add" />
+                        <img src="img/backlog/selected.png" class="carousel-item" alt="Game Backlog Selection" />
+                        <img src="img/backlog/api.png" class="carousel-item" alt="Game Backlog API Integration" />
                     </div>
                     <button class="carousel-btn next" onclick="nextSlide(this)">›</button>
                 </div>
@@ -191,14 +225,14 @@
                 <div class="carousel">
                     <button class="carousel-btn prev" onclick="prevSlide(this)">‹</button>
                     <div class="carousel-track">
-                        <img src="img/tcg/home.png" class="carousel-item active" />
-                        <img src="img/tcg/menu.png" class="carousel-item" />
-                        <img src="img/tcg/select-theme.png" class="carousel-item" />
-                        <img src="img/tcg/quiz.png" class="carousel-item" />
-                        <img src="img/tcg/booster.png" class="carousel-item" />
-                        <img src="img/tcg/opened-booster.png" class="carousel-item" />
-                        <img src="img/tcg/album.png" class="carousel-item" />
-                        <img src="img/tcg/card-details.png" class="carousel-item" />
+                        <img src="img/tcg/home.png" class="carousel-item active" alt="TCG Home" />
+                        <img src="img/tcg/menu.png" class="carousel-item" alt="TCG Menu" />
+                        <img src="img/tcg/select-theme.png" class="carousel-item" alt="TCG Theme Selection" />
+                        <img src="img/tcg/quiz.png" class="carousel-item" alt="TCG Quiz" />
+                        <img src="img/tcg/booster.png" class="carousel-item" alt="TCG Booster" />
+                        <img src="img/tcg/opened-booster.png" class="carousel-item" alt="TCG Opened Booster" />
+                        <img src="img/tcg/album.png" class="carousel-item" alt="TCG Album" />
+                        <img src="img/tcg/card-details.png" class="carousel-item" alt="TCG Card Details" />
                     </div>
                     <button class="carousel-btn next" onclick="nextSlide(this)">›</button>
                 </div>
@@ -218,7 +252,7 @@
                 <div class="article-content">
                     <h3 id="articleTitle1"></h3>
                     <div class="article-actions">
-                        <a href="pdf/article1.pdf" class="btn-link" target="_blank">Ler Artigo</a>
+                        <a href="pdf/article1.pdf" class="btn-link" target="_blank" id="articleBtn1"></a>
                     </div>
                 </div>
             </div>

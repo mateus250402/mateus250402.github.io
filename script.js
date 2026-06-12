@@ -2,95 +2,109 @@ let currentLang = 'pt';
 
 const content = {
   pt: {
-    heroTitle: 'Olá, eu sou <span>Desenvolvedor Freelancer</span>',
-    heroText: 'Crio sistemas web, dashboards interativos, softwares de gerenciamento e lido com <span>Inteligência Artificial</span> para simplificar processos, organizar dados, analisar e gerar resultados reais para o seu negócio.',
-    heroBtn: 'Entrar em contato',
+    heroTitle: 'Transformando ideias em <span>Soluções Digitais</span>',
+    heroText: 'Desenvolvo sistemas web, dashboards interativos e automações com <span>Inteligência Artificial</span> para otimizar processos, analisar dados e gerar resultados reais para o seu negócio.',
+    heroBtn: 'Vamos conversar?',
 
     aboutTitle: 'Sobre mim',
-    aboutText: 'Sou desenvolvedor com experiência em <span>PHP</span>, <span>Python</span> (Flask, Streamlit, Pandas, Plotly, Dash), <span>R</span> (ggplot2, dplyr, tidyr), <span>Java</span>, <span>Kotlin</span>, <span>HTML</span>, <span>CSS</span> (Bootstrap) e <span>banco de dados</span> como <span>MySQL</span> e <span>SQLite</span>. Já desenvolvi <span>sistemas completos de inscrição, autenticação, recuperação de senha, dashboards analíticos, automações de e-mail, integrações e chatbots</span>. Atuo também em projetos acadêmicos e de pesquisa, incluindo dashboards para <span>análise de dados</span> na <span>área da saúde</span> e <span>chatbots</span> de apoio a decisão médica. Tenho foco em soluções práticas, bem estruturadas, portáveis e orientadas a resultado, sempre buscando <span>entregar valor real para o cliente</span>.',
+    aboutText: 'Sou desenvolvedor com sólida experiência em <span>PHP</span>, <span>Python</span> (Flask, Streamlit, Pandas), <span>Java</span> e <span>Kotlin</span>. Especialista em criar <span>sistemas de alta complexidade</span>, incluindo fluxos de autenticação, dashboards analíticos, automações de e-mail e integração de <span>Chatbots com IA</span>. Meu foco é entregar soluções que não apenas funcionam, mas que <span>agregam valor estratégico</span> através de código limpo, portabilidade e foco total no resultado do cliente.',
 
     servicesTitle: 'Serviços',
-    service1Title: 'Sistemas Web',
-    service1Text: 'Desenvolvimento de sistemas completos com login, cadastro, relatórios, painéis administrativos, integração com Pix e mais.',
-    service2Title: 'Dashboards',
-    service2Text: 'Dashboards interativos com Python, Dash e Streamlit para análise de dados e indicadores.',
-    service3Title: 'Inteligência Artificial',
-    service3Text: 'Scripts e automações para economizar tempo, integrar sistemas e reduzir trabalho manual.',
+    service1Title: 'Sistemas Web & Full-stack',
+    service1Text: 'Desenvolvimento de plataformas completas: gestão de usuários, painéis administrativos, relatórios e integração com APIs de pagamento.',
+    service2Title: 'Dashboards & Dados',
+    service2Text: 'Visualização de dados estratégica com Python, Dash e Streamlit, transformando dados brutos em decisões inteligentes.',
+    service3Title: 'IA & Automações',
+    service3Text: 'Integração de LLMs (como Gemini e GPT) para criar assistentes inteligentes e scripts que eliminam tarefas manuais repetitivas.',
 
-    projectProSectionTitle: 'Projetos profissionais',
-    projectProSectionText: 'Abaixo alguns exemplos de sistemas, dashboards e automações que já desenvolvi.',
+    projectProSectionTitle: 'Experiência Profissional',
+    projectProSectionText: 'Sistemas robustos desenvolvidos para atender demandas reais do mercado.',
 
-    projectProTitle1: 'Sistema de inscrição - JuvEnart',
-    projectProText1: 'Desenvolvi um sistema completo de inscrição para o festival JuvEnart, o maior festival artístico do Rio Grande do Sul, incluindo autenticação, recuperação de senha, chatbot, painel administrativo para gestão de inscrições e integração com pagamento via Pix. A primeira versão feita em PHP, posteriormente migrada para Python Flask e utilizando N8N para integração com api do Gemini para chatbot.',
+    projectProTitle1: 'Sistema de Inscrição - JuvEnart',
+    projectProText1: 'Plataforma completa para o maior festival artístico do RS. Inclui gestão de inscritos, recuperação de senha, chatbot inteligente via API do Gemini e integração de pagamentos via Pix. Migrado de PHP para Flask buscando maior escalabilidade.',
 
-    projectAcadSectionTitle: 'Projetos acadêmicos',
+    projectProTitle2: 'Gestão de Contatos & Marketing',
+    projectProText2: 'Sistema customizado para empresa de streaming com CRUD completo, segmentação dinâmica de perfis e integração com ChatPro para automação de mensagens em massa. Suporte a backups, sincronização, edição em lote.',
+
+    projectProTitle3: 'ERP de Gestão para Grupos de Dança',
+    projectProText3: 'Plataforma completa para gestão de companhias de dança. Possui <span>três módulos integrados</span>: Dançarino (agenda e pagamentos via Pix), Coordenador (controle de frequência e gestão operacional) e Gestor (painel analítico de faturamento e métricas). Focado em <span>otimização de processos</span> e visão estratégica do negócio.',
+
+    projectAcadSectionTitle: 'Projetos Acadêmicos & Pesquisa',
     projectAcadSectionText: 'Abaixo alguns exemplos de projetos acadêmicos e de pesquisa que já desenvolvi.',
 
-    projectAcadTitle1: 'Backlog de Jogos',
-    projectAcadText1: 'Desenvolvi um sistema web completo para gerenciar um backlog de jogos, permitindo adicionar, remover, buscar, ordenar e avaliar jogos. O sistema inclui autenticação de usuários, painel administrativo e integração com uma API externa para buscar informações dos jogos. Foi desenvolvido utilizando Haskell no backend e HTML/CSS no frontend.',
+    projectAcadTitle1: 'Game Backlog Manager',
+    projectAcadText1: 'A full-stack web system developed in Haskell to manage game collections, featuring user authentication and external API integration for game metadata.',
 
-    projectAcadTitle2: 'TCG Educativo',
-    projectAcadText2: 'Desenvolvi um jogo de cartas colecionáveis (TCG) educativo focado em ensinar e revisar conteúdos do ENEM e de programação de forma divertida e interativa. O jogo permite aos jogadores construir decks, enfrentar desafios e aprender enquanto jogam. Foi desenvolvido utilizando Java e a biblioteca LibGDX para a interface gráfica.',
+    projectAcadTitle2: 'Educational TCG',
+    projectAcadText2: 'An interactive trading card game designed for learning programming and exam prep. Built with Java and LibGDX for a rich graphical interface.',
 
-    projectAcadTitle3: 'Dashboard de Análise de Dados de Saúde',
-    projectAcadText3: 'Criei uma interface em Python Streamlit para integração com trabalho de mestrado sobre XAI na área da saúde. O dashboard permite a inserção de dados do paciente e a visualização de contrafactuais para dados de doença renal crônica, facilitando a análise e interpretação dos resultados pelos pesquisadores.',
+    projectAcadTitle3: 'Healthcare Analysis Dashboard',
+    projectAcadText3: 'A Streamlit-based interface for XAI research in healthcare. Visualizes counterfactual data for chronic kidney disease to assist medical researchers.',
 
-    projectAcadTitle4: 'Chatbot de Apoio à Decisão Médica',
-    projectAcadText4: 'Desenvolvi um chatbot utilizando Python e a API do Gemini para auxiliar médicos na tomada de decisões clínicas. O chatbot é capaz de responder perguntas, fornecer recomendações baseadas em protocolos de atendimento, melhorando a eficiência e a precisão no atendimento ao paciente.',
+    projectAcadTitle4: 'Clinical Decision Support AI',
+    projectAcadText4: 'An AI assistant built with Gemini API to aid doctors in making clinical decisions based on established medical protocols.',
 
-    articlesTitle: 'Artigos e publicações',
-    articlesText: 'Abaixo alguns artigos e publicações relacionados aos meus projetos acadêmicos e de pesquisa.',
+    articlesTitle: 'Artigos & Publicações',
+    articlesText: 'Scientific research and articles related to my academic projects.',
 
-    articleTitle1: 'Protótipo de Dashboard para mostrar explicações contrafactuais para dados de doença renal crônica',
+    articleTitle1: 'Protótipo de Dashboard para explicações contrafactuais em saúde (XAI)',
+    articleBtn1: 'Ler Artigo Full',
 
     contactTitle: 'Contato',
-    contactText: 'Entre em contato comigo pelos canais abaixo:'
+    contactText: 'Vamos transformar seu projeto em realidade?'
   },
 
   en: {
-    heroTitle: 'Hello, I am a <span>Freelance Developer</span>',
-    heroText: 'I create web systems, interactive dashboards, management software and deal with <span>Artificial Intelligence</span> to simplify processes, organize data, analyze and generate real results for your business.',
-    heroBtn: 'Get in touch',
+    heroTitle: 'Turning ideas into <span>Digital Solutions</span>',
+    heroText: 'I build web systems, interactive dashboards, and <span>AI-driven automations</span> to streamline processes, analyze data, and drive real results for your business.',
+    heroBtn: 'Let\'s talk!',
 
-    aboutTitle: 'About me',
-    aboutText: 'I am a developer with experience in <span>PHP</span>, <span>Python</span> (Flask, Streamlit, Pandas, Plotly, Dash), <span>R</span> (ggplot2, dplyr, tidyr), <span>Java</span>, <span>Kotlin</span>, <span>HTML</span>, <span>CSS</span> (Bootstrap) and <span>databases</span> such as <span>MySQL</span> and <span>SQLite</span>. I have developed <span>complete registration systems, authentication, password recovery, analytical dashboards, email automations, integrations and chatbots</span>. I also work on academic and research projects, including dashboards for <span>data analysis</span> in the <span>health sector</span> and <span>chatbots</span> for clinical decision support. I focus on practical, well-structured, portable and result-oriented solutions, always seeking to <span>deliver real value to the client</span>.',
+    aboutTitle: 'About Me',
+    aboutText: 'I am a developer with solid experience in <span>PHP</span>, <span>Python</span> (Flask, Streamlit, Pandas), <span>Java</span>, and <span>Kotlin</span>. I specialize in building <span>complex systems</span>, including authentication flows, analytical dashboards, email automations, and <span>AI Chatbot integrations</span>. My focus is on delivering solutions that don\'t just work, but <span>add strategic value</span> through clean code, portability, and a result-oriented approach.',
 
     servicesTitle: 'Services',
-    service1Title: 'Web Systems',
-    service1Text: 'Development of complete systems with login, registration, reports, admin panels, Pix integration and more.',
-    service2Title: 'Dashboards',
-    service2Text: 'Interactive dashboards using Python, Dash and Streamlit for data analysis and KPIs.',
-    service3Title: 'Artificial Intelligence',
-    service3Text: 'Scripts and automations to save time, integrate systems and reduce manual work.',
+    service1Title: 'Web & Full-stack Systems',
+    service1Text: 'Developing complete platforms: user management, admin panels, reporting, and payment API integrations.',
+    service2Title: 'Dashboards & Data',
+    service2Text: 'Strategic data visualization using Python, Dash, and Streamlit, turning raw data into smart business decisions.',
+    service3Title: 'AI & Automations',
+    service3Text: 'LLM integration (Gemini/GPT) to create intelligent assistants and scripts that eliminate repetitive manual tasks.',
 
-    projectProSectionTitle: 'Professional Projects',
-    projectProSectionText: 'Below are some examples of systems, dashboards and automations I have developed.',
+    projectProSectionTitle: 'Professional Experience',
+    projectProSectionText: 'Robust systems developed to meet real market demands.',
 
     projectProTitle1: 'Registration System - JuvEnart',
-    projectProText1: 'I developed a complete registration system for the JuvEnart festival, the largest art festival in Rio Grande do Sul, including authentication, password recovery, chatbot, administrative panel for registration management and integration with Pix payment. The first version was made in PHP, later migrated to Python Flask and using N8N for integration with Gemini API for the chatbot.',
+    projectProText1: 'A comprehensive platform for the largest art festival in Southern Brazil. Features include participant management, smart chatbot via Gemini API, and Pix payment integration. Migrated from PHP to Flask for scalability.',
 
-    projectAcadSectionTitle: 'Academic Projects',
-    projectAcadSectionText: 'Below are some examples of academic and research projects I have developed.',
+    projectProTitle2: 'Contact & Marketing Management',
+    projectProText2: 'Custom system for a streaming company featuring full CRUD functionality, dynamic profile segmentation, and ChatPro integration for automated mass messaging.',
 
-    projectAcadTitle1: 'Game Backlog',
-    projectAcadText1: 'I developed a complete web system to manage a game backlog, allowing users to add, remove, search, sort and rate games. The system includes user authentication, administrative panel and integration with an external API to fetch game information. It was developed using Haskell on the backend and HTML/CSS on the frontend.',
+    projectProTitle3: 'Dance Group Management ERP',
+    projectProText3: 'A comprehensive platform for dance company management. Features <span>three integrated modules</span>: Dancer (scheduling and Pix payments), Coordinator (attendance tracking and operations), and Manager (analytics dashboard for revenue and metrics). Focused on <span>process optimization</span> and strategic insights.',
+
+    projectAcadSectionTitle: 'Academic & Research Projects',
+    projectAcadSectionText: 'Highlighting my research and development in academia.',
+
+    projectAcadTitle1: 'Game Backlog Manager',
+    projectAcadText1: 'A full-stack web system developed in Haskell to manage game collections, featuring user authentication and external API integration for game metadata.',
 
     projectAcadTitle2: 'Educational TCG',
-    projectAcadText2: 'I developed an educational trading card game (TCG) focused on teaching and reviewing ENEM and programming contents in a fun and interactive way. The game allows players to build decks, face challenges and learn while playing. It was developed using Java and the LibGDX library for the graphical interface.',
+    projectAcadText2: 'An interactive trading card game designed for learning programming and exam prep. Built with Java and LibGDX for a rich graphical interface.',
 
-    projectAcadTitle3: 'Health Data Analysis Dashboard',
-    projectAcadText3: 'I created an interface in Python Streamlit for integration with a master\'s thesis on XAI in healthcare. The dashboard allows patient data insertion and visualization of counterfactuals for chronic kidney disease data, facilitating analysis and interpretation of results by researchers.',
+    projectAcadTitle3: 'Healthcare Analysis Dashboard',
+    projectAcadText3: 'A Streamlit-based interface for XAI research in healthcare. Visualizes counterfactual data for chronic kidney disease to assist medical researchers.',
 
-    projectAcadTitle4: 'Clinical Decision Support Chatbot',
-    projectAcadText4: 'I developed a chatbot using Python and the Gemini API to assist doctors in clinical decision making. The chatbot is capable of answering questions, providing recommendations based on care protocols, improving efficiency and accuracy in patient care.',
+    projectAcadTitle4: 'Clinical Decision Support AI',
+    projectAcadText4: 'An AI assistant built with Gemini API to aid doctors in making clinical decisions based on established medical protocols.',
 
-    articlesTitle: 'Articles and Publications',
-    articlesText: 'Below are some articles and publications related to my academic and research projects.',
+    articlesTitle: 'Articles & Publications',
+    articlesText: 'Scientific research and articles related to my academic projects.',
 
-    articleTitle1: 'Dashboard Prototype to show counterfactual explanations for chronic kidney disease data',
+    articleTitle1: 'Dashboard Prototype for Counterfactual Explanations in Healthcare (XAI)',
+    articleBtn1: 'Read Full Paper',
 
     contactTitle: 'Contact',
-    contactText: 'Get in touch with me through the channels below:'
+    contactText: 'Let\'s turn your project into reality!'
   }
 };
 
